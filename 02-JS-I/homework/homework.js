@@ -61,7 +61,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  return x == y;
+  if (x === y) return true; else return false
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -155,6 +155,27 @@ function esPositivo(numero) {
   } else if(numero == 0) {
     return false
   }
+
+  
+var array = [33,2,3,"null","null"]
+var contStr = 0
+var contNum = 0
+var queue = []
+for (let i = 0; i < array.length; i++) {
+  if (array[i]=== "OUT") {
+    queue.unshift();
+    contStr++
+  }
+  if (Number(array[i])) {
+    contNum++
+  }
+  if (contStr > contNum) {
+    return false;
+  }
+}
+return queue;
+
+
   
 }
 
